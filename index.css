@@ -1,0 +1,96 @@
+/* Estilos generales */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura total de la ventana */
+    font-family: Arial, sans-serif;
+    background-image: url('src/img/fuego1.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+
+}
+
+main {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    box-shadow: #000000;
+    text-shadow: 0 10px 20px black;
+    
+}
+
+#TItulo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffe0e0;
+}
+
+.Descripcion p {
+    font-size: 1.2rem;
+    color: #fff3f3;
+    margin-bottom: 2rem;
+    padding: 0 20px; /* Pequeño margen para dispositivos móviles */
+}
+
+.btn {
+    display: flex;
+    flex-direction:row; /* Apilar los botones verticalmente */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;
+    gap: 1rem; /* Espacio entre botones */
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff8b4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 10px 20px black;
+}
+
+footer {
+    position: fixed;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Divisor entre los botones */
+.Divisor p {
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+footer a {
+    color: #d89c8e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Mi Tienda Online</title>
+    <link rel="stylesheet" href="/carrito/carrito.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Mi Tienda Online</h1>
+            <nav>
+                <a href="#home">Inicio</a>
+                <a href="/dashboard/dashboard.html">Productos</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="/carrito/carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Carrito de Compras</h2>
+        <section class="cart-container">
+            <!-- Los productos se cargarán dinámicamente -->
+        </section>
+
+        <div class="cart-total">
+            <p class="p-total">Total: $0.00</p>
+            <button class="checkout-btn">Proceder al Pago</button>
+            <button onclick="clearCart" class="clear-btn">Vaciar Carrito</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Vortex Vanguard. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/carrito/carrito.js"></script>
+</body>
+</html>

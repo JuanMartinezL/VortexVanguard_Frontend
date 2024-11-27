@@ -1,0 +1,185 @@
+/* Estilos Generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/src/img/fire-forest-flames-generative-ai\ \(1\).jpg');
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor sesion de logueo */
+.container {
+    display: flex;
+    background-color: #d5b2b2bb;
+    width: 800px;
+    border-radius: 4%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* lado izquierdo (image) */
+.container .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5% ;
+}
+
+.container .left img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lado derecho (login form) */
+.container .right {
+    width: 50%;
+    padding: 40px;
+    text-shadow: 0 1px 2px rgb(51, 53, 53);
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    box-shadow: #000000;
+}
+
+.container .right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.container .right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .right form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e39a9a;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container .right form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.container .right form button {
+    background-color: #e48b1e;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-top: 40px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container .right form button:hover {
+    background-color: #36cc4d;
+}
+
+/* Iconos red social */
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.social-login img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-login img:hover {
+    opacity: 0.8;
+}
+
+/* Link olvidaste contraseña */
+.forgot-password {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.forgot-password a {
+    color: #191f24;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/*link registrarse*/
+
+.registrarse {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.registrarse a {
+    color: #191f24;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        border-radius: 5px;
+    }
+
+    .container .left, .container .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container .left img {
+        max-width: 70%;
+    }
+
+    .social-login img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .right h2 {
+        font-size: 20px;
+    }
+
+    .container .right form input, .container .right form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .social-login {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .forgot-password {
+        margin-top: 20px;
+    }
+}
